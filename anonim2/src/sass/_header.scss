@@ -1,0 +1,58 @@
+header.header {
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.logo {
+  &-link {
+    color: $font;
+    display: flex;
+    align-items: center;
+    @include fz(24);
+    font-weight: 700;
+
+    &-icon {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      margin-right: 10px;
+      background: $secondary;
+      border-radius: 50%;
+
+      img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+  }
+}
+.main-menu {
+  li {
+    display: inline-block;
+  }
+  a {
+    color: $font;
+    display: block;
+    padding: 5px 15px;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+.svg-key {
+  width: 16px;
+  height: 16px;
+  fill: $font;
+}
+.mm-toggler {
+  display: none;
+  visibility: hidden;
+}
